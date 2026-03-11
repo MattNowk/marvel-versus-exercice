@@ -87,16 +87,8 @@ nav ul li a:hover { color: var(--primary); }
     filter: drop-shadow(-20px 0 50px rgba(0,0,0,0.5));
 }
 
-/* Hero Socials (Nouveau) */
-.hero-socials { margin-top: 40px; }
-.hero-socials p {
-    font-size: 0.85rem;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
+/* Hero Socials */
+.hero-socials { margin-top: 30px; }
 #hero .social-icons { justify-content: flex-start; }
 
 /* Sections Global */
@@ -156,16 +148,17 @@ article h3 { font-size: 1.8rem; margin-bottom: 10px; }
     line-height: 1.6;
 }
 
-/* Réseaux Sociaux (Communs au Hero et au Footer) */
+/* Boutons Réseaux Sociaux (Design Amélioré) */
 .social-icons { display: flex; gap: 15px; }
 .icon-link {
-    width: 45px; 
-    height: 45px; 
-    background: var(--gray-dark); 
+    width: 50px; 
+    height: 50px; 
+    background: transparent; 
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Bordure blanche discrète */
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    border-radius: 8px;
+    border-radius: 50%; /* Boutons parfaitement ronds */
     color: var(--white);
     text-decoration: none; 
     font-weight: bold;
@@ -175,8 +168,9 @@ article h3 { font-size: 1.8rem; margin-bottom: 10px; }
 
 .icon-link:hover { 
     background: var(--primary); 
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 20px rgba(237, 29, 36, 0.4);
+    border-color: var(--primary);
+    transform: translateY(-5px) scale(1.05); /* Effet de zoom fluide */
+    box-shadow: 0 8px 20px rgba(237, 29, 36, 0.5); /* Halo rouge */
 }
 
 .footer-nav h4 { 
@@ -222,7 +216,7 @@ article h3 { font-size: 1.8rem; margin-bottom: 10px; }
     #hero { flex-direction: column; text-align: center; padding-top: 100px; }
     .hero-content { width: 100%; padding: 0 20px; }
     .hero-character { display: none; }
-    #hero .social-icons { justify-content: center; } /* Centrage des réseaux du hero */
+    #hero .social-icons { justify-content: center; }
     .cta-group { justify-content: center; flex-wrap: wrap; }
     nav ul { display: none; }
     .gallery { grid-template-columns: 1fr; }
